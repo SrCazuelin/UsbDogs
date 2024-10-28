@@ -1,0 +1,119 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UsbDogs</title>
+    <link rel="icon" type="image/x-icon" href="usbdogs-favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body, html {
+    height: 100%;
+    position: relative;
+    }
+  
+  
+    
+    </style>
+  </head>
+  <body>
+    <video id="video-fondo" autoplay loop muted>
+      <source src="f1.mp4" type="video/mp4">
+    </video>
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fde975;">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Logo de UsbDogs">
+      </a>
+    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a style="border: 1px solid black; margin-left: 10px;"class="nav-link" class="nav-link" href="index.html">| Inicio <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a style="border: 1px solid black; margin-left: 10px; "class="nav-link" href="quienes-somos.html">| ¿Quienes Somos? |</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a style="border: 1px solid black; margin-left: 10px;" class="nav-link dropdown-toggle" href="carrito.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Carrito</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider">s</div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">| ‎ ‎ Productos ‎ ‎ |</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+          <input style="width: 100%; float: left; margin-right: 10px;" class="form-control mr-sm-2" type="search" placeholder="Escribe aqui" aria-label="Search">
+          </form>
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+          <button style="margin-left: 10px;"  class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class = "modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Producto agregado al carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>El producto se ha agregado al carrito correctamente.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 50px;" class="container">
+      <div class="row">
+        <div class = "col-md-6">
+          <img class="img-fluid" src="chad-victus.jpg" alt="Laptop">
+        </div>
+        <div class = "col-md-6">
+          <h2>Chad Victus</h2>
+          <p>Laptop Bastante rapida y versatil</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">CPU = i7 11th gen</li>
+            <li class="list-group-item">GPU = RTX3060ti</li>
+            <li class="list-group-item">Espacio = 250gb SSD</li>
+            <li class="list-group-item">Precio = $999.990</li>
+          </ul>
+          <div class="card-body">
+            <a style="margin-right: 10px; color: red;" href="#" class="card-link">Comprar</a>
+            <a style="color: red;" href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#myModal">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
